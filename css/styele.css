@@ -124,6 +124,9 @@ body {
     width: 100%;
     gap: 50px
 }
+.online-game-box img:hover{
+    border: 1 px solid;
+}
 
 .online-game-box {}
 
@@ -132,42 +135,44 @@ body {
 }
 
 /* position section starts here */
+
+/* position section starts here */
 .position-section {
     /* border:1px solid green ; */
     width: 1100px;
     height: 552px;
     margin: 0 auto;
+    padding-top: 100px;
 
 
 }
 
 .position-container {
+
     display: flex;
+    margin: 0 auto;
+   
 }
 
-.position-img {
-    width: 300px;
-}
 
-.position-img {
-    /* border: 1px solid black; */
-    width: 50%;
-}
+
 
 .position-text {
-    /* border: 1px solid black; */
     width: 50%;
     text-align: center;
-    padding-top: 17%;
-    padding-left: 150px;
+    padding-left: 250px;
+    padding-top: 100px;
 
 }
-
 .position-img-styles {
     position: relative;
-    bottom: 250px;
-    left: 300px;
+    bottom: 200px;
+    left: 250px;
 }
+
+
+/* position section ends here */
+
 
 /* cercle img section here */
 
@@ -177,17 +182,17 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 100px 0 ;
-    
-    
-
-
-
+    margin: 100px 0 80px;
+   
 
 }
 .cercle-flex{
     display: flex;
     gap:10px;
+}
+.cercle-flex:hover{
+    border: 1px solid #F948B2;
+    border-radius: 50px;
 }
 
 /* footer section stats here */

@@ -1,12 +1,13 @@
 @media screen and (max-width: 425px) {
     .nav-section{
             flex-direction: column;
-            margin-bottom: 60%;
-            background-color: red;
-        
+            padding-bottom: 50%;
+
+    
     }
     
     .nav-right{
+
         flex-direction: column;
         margin-top: 20px;
         gap:20px;
@@ -19,12 +20,11 @@
     }
     .banner-container{
     flex-direction: column;
+    width: 20$;
     
     
 }
-online-game{
 
-}
 .onlie-game-container{
     flex-direction: column;
 }
@@ -33,4 +33,44 @@ online-game{
     width: 20%;
     padding-left: 100px;
 }
+
+
+.banner-container{
+    flex-direction: column;
 }
+}
+
+
+/* medium device/table */
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .nav-section ,
+    .banner-container,
+    .position-container,
+    .online-game-box {
+        flex-direction: column;
+    }
+    .nav-left{
+        flex-direction: column;
+    }
+    {
+        flex-direction: column;
+    }
+    .online-game-container{
+
+    }
+    .online-game-box{
+        width: 35%;
+        margin-left:50px;
+    }
+    .online-game-container {
+        text-align: center;
+    }
+
+}
+.position-img {
+    width:28%;
+
+}
+
+    
