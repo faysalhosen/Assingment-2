@@ -1,7 +1,8 @@
-@media screen and (max-width:500x) {
+@media screen and (max-width: 425px) {
     .nav-section{
             flex-direction: column;
             margin-bottom: 60%;
+            background-color: red;
         
     }
     
