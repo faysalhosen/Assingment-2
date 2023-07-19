@@ -108,10 +108,13 @@ body {
 /* online game styles stars here */
 
 .online-game {
-    /* border:1px solid red; */
+    
     width: 1100px;
     margin: 0 auto;
 
+}
+.game-description{
+    text-align: center;
 }
 
 .online-game-box {
@@ -127,12 +130,12 @@ body {
 .online-game-box img:hover{
     border: 1 px solid;
 }
-
-.online-game-box {}
-
-.onlie-game-container {
-    text-align: center;
+.online-game-container{
+    padding-left: 20px;
+    padding-top: 50px;
 }
+
+
 
 /* position section starts here */
 
@@ -160,8 +163,9 @@ body {
 .position-text {
     width: 50%;
     text-align: center;
-    padding-left: 250px;
+    padding-left: 50px;
     padding-top: 100px;
+    justify-content: center;
 
 }
 .position-img-styles {
