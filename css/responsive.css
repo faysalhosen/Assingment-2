@@ -1,7 +1,35 @@
-@media screen and (max-width:500px) {
+@media screen and (max-width:500x) {
     .nav-section{
-        flex-direction: column;
-    
+            flex-direction: column;
+            margin-bottom: 60%;
+        
     }
     
+    .nav-right{
+        flex-direction: column;
+        margin-top: 20px;
+        gap:20px;
+        
+    }
+    .nav-left{
+        margin: 50px auto;
+        
+   
+    }
+    .banner-container{
+    flex-direction: column;
+    
+    
+}
+online-game{
+
+}
+.onlie-game-container{
+    flex-direction: column;
+}
+.online-game-box{
+    flex-direction: column;
+    width: 20%;
+    padding-left: 100px;
+}
 }
