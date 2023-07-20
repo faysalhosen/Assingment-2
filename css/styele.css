@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,700;1,800;1,900&display=swap');
 
+
+:root {
+  --primary-color: #FF42A5;
+  --secondary-color: #4EC5F7;
+  --title-color: #0B0223;
+  --navlink-color: #3C354F;
+  --text-color: #534C64;
+  --footer-text: rgba(255, 255, 255, 0.60);
+  --gradient-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  --section-bg-color: rgba(255, 66, 165, 0.03);
+}
+
 body {
-    font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
 }
 
 .nav-section {
     display: flex;
     /* border: 1px solid red; */
     height: 50px;
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 
 .nav-left {
@@ -28,7 +42,7 @@ body {
 
 }
 
-.nav-right {
+.nav-right ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,9 +50,8 @@ body {
     margin: 0 auto;
 
 }
-
-.nav-icon {
-    background-color: rgba(11, 2, 35, 0.10);
+.nav-right-icon{
+  background-color:#FF42A5;
 }
 
 .nav-right a {
@@ -48,24 +61,20 @@ body {
 /* navbar section styles end */
 
 /* banner section starts here */
-/* banner section starts here */
-.banner-container {
-    width: 1100px;
-    /* border: 1px solid red; */
-    margin: 0 auto;
-    min-height: 50px;
+.banner-container { 
+   margin-top: 100px;
     display: flex;
 }
 
 .banner-text {
     width: 50%;
-    /* border: 1px solid green; */
     text-align: center;
-    padding-top: 90px;
+   
 }
 
 .banner-img {
-    width: 50%;
+    width: 40%;
+  
 }
 
 .banner-text h1 {
@@ -106,40 +115,69 @@ body {
 
 
 /* online game styles stars here */
-
-.online-game {
-    
-    width: 1100px;
-    margin: 0 auto;
-
+/* Online Games Section */
+.online-games-section {
+  padding: 2rem;
+  text-align: center;
 }
-.game-description{
-    text-align: center;
+.online-games-section h2 {
+  margin-bottom: 0.5rem;
 }
-
-.online-game-box {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.online-game-box img {
-    width: 100%;
-    gap: 50px
-}
-.online-game-box img:hover{
-    border: 1 px solid;
-}
-.online-game-container{
-    padding-left: 20px;
-    padding-top: 50px;
+.online-games-section .card-container {
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
 }
 
 
+.online-games-section figure .img-wrapper {
+  position: relative;
+}
+.online-games-section figure .card-hover {
+  position: absolute;
+  inset: 0;
+  top: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: top 0.3s ease, border 0.3s ease;
+}
+.online-games-section figure:hover .card-hover {
+  top: 0;
+  border: 3px solid var(--primary-color);
+}
+.online-games-section figure .card-hover i {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.online-games-section figure .card-hover i:hover {
+  transform: scale(1.5);
+  color: var(--primary-color);
+}
+.online-games-section figure .card-hover span {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.online-games-section figure figcaption {
+  text-align: left;
+  margin-top: 0.8rem;
+}
 
 /* position section starts here */
 
-/* position section starts here */
 .position-section {
     /* border:1px solid green ; */
     width: 1100px;
@@ -180,26 +218,47 @@ body {
 
 /* cercle img section here */
 
-.cercle-container{
-    border: 1 px solid green;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    margin: 100px 0 80px;
-   
 
+/* * Category Section  */
+.category-section {
+  padding-block: 4rem;
 }
-.cercle-flex{
-    display: flex;
-    gap:10px;
+.category-section .card-container {
+  padding: 5rem 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-.cercle-flex:hover{
-    border: 1px solid #F948B2;
-    border-radius: 50px;
+.category-section .card {
+  background-color: white;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: border 0.3s ease, color 0.3s ease;
 }
 
-/* footer section stats here */
+.category-section .card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.category-section .card span {
+  font-weight: 600;
+}
+.category-section .card:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+ 
+ 
+/* footer section  here */
 .footer-section {
     background-color: #0B0223;
     height: 350px;
@@ -217,12 +276,10 @@ body {
     gap: 15px;
     margin: 0 auto;
     padding-left: 40%;
-    ;
     color: #fff;
 
 }
-
-
+ 
 
 
 .footer-text {
@@ -230,7 +287,6 @@ body {
     gap: 30px;
     font-size: 18px;
     color: #fff;
-    ;
     padding-left: 25%;
     color: #fff;
 }
